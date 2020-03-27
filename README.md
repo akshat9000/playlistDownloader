@@ -4,4 +4,5 @@ __
 
 ## Aim
 I aim to create a python script which works in tandem with a txt file located in the same directory, which contains a list of urls
-This w
+This will be different from the other downloaders which exist as the user will have the option of either simply creating a list of videos to download by copying its urls onto the txt file, or just copying the url of the first video of a pre-existing playlist, and the script will do the rest
+
