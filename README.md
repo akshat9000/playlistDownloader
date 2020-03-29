@@ -13,5 +13,6 @@ Just download the python file along with the urls.txt file to a location of your
 list all the urls you require to be downloaded
 open up a terminal instance, navigate to the folder where you have kept this file, and simply execute the python script
 __
+
 *Note: This is **NOT** the headless version, that is soon to follow, meanwhile, you can choose to minimize the window that pops up, or watch it download*
 __
