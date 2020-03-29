@@ -4,11 +4,27 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.chrome.options import Options
 import os
 import os.path
+import urllib.request
+from zipfile import ZipFile 
 
 if(not os.path.isdir('Downloads')):
     os.mkdir('Downloads')
     print('made local Downloads folder')
     time.sleep(0.5)
+
+if(not os.path.isfile('chromedriver.exe')):
+    opener = urllib.request.build_opener()
+    opener.addheaders = [('Referer','https://chromedriver.storage.googleapis.com/80.0.3987.106')]
+    urllib.request.install_opener(opener)
+    source = 'https://chromedriver.storage.googleapis.com/80.0.3987.106/chromedriver_win32.zip'
+    destination = os.getcwd()+'chromedriver_win32.zip'
+    urllib.request.urlretrieve(source,destination)
+    with ZipFile('chromedriver_win32.zip','r') as f:
+        f.extractall()
+    os.remove('chromedriver_win32.zip')
+
+if(not os.path.isfile('urls.txt')):
+    raise Exception('There is no urls.txt file, pls make one and add urls')
 
 execPath = '{}\\chromedriver'.format(os.getcwd())
 print('chromedriver executable path: '+execPath)
