@@ -11,14 +11,16 @@ Just download the python file along with the urls.txt file to a location of your
 list all the urls of the videos you require to be downloaded
 open up a terminal instance, navigate to the folder where you have kept this file, and simply execute the python script
 
-*Note: This is **NOT** the headless version, that is soon to follow, meanwhile, you can choose to minimize the window that pops up, or watch it download*
+<s>*Note: This is **NOT** the headless version, that is soon to follow, meanwhile, you can choose to minimize the window that pops up, or watch it download*</s>
+
+*This **IS** the headless version, enjoy!*
 
 ## Dependencies
 ### These are the features you will definitely require
 * [Python, version 2 or above](https://www.python.org/)
 * [Selenium Webdriver](https://www.selenium.dev/)
 * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-* [Chromedriver](https://chromedriver.chromium.org/), and place it in the downloads folder
+* [Chromedriver](https://chromedriver.chromium.org/), but if you dont have it, the script auto-downloads it for you!
 
 ## Right Now
 As of this moment, this script only works on [vidmo.org](vidmo.org), as the location of the specific url source from the specific video tag is unique only to this site, and this script is based solely upon webscraping, but I am trying to make a generic downloader too!
